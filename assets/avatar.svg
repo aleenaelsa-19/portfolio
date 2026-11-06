@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Red/Black Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140407" />
+      <stop offset="50%" stop-color="#22070e" />
+      <stop offset="100%" stop-color="#070204" />
+    </linearGradient>
+    <linearGradient id="crimsonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4766" />
+      <stop offset="50%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd5b8" />
+      <stop offset="100%" stop-color="#e8b490" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f0f15" />
+      <stop offset="100%" stop-color="#0a0507" />
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a24" />
+      <stop offset="40%" stop-color="#121218" />
+      <stop offset="100%" stop-color="#0a0a0f" />
+    </linearGradient>
+    <linearGradient id="hoodieTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3355" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+    <!-- Filter for soft ambient crimson glow -->
+    <filter id="crimsonAura" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="28" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer background circle with neon crimson border -->
+  <rect width="400" height="400" rx="200" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="195" fill="none" stroke="url(#crimsonGlow)" stroke-width="4" opacity="0.85" />
+
+  <!-- Ambient glowing aura behind character -->
+  <circle cx="200" cy="180" r="120" fill="#e11d48" opacity="0.25" filter="url(#crimsonAura)" />
+
+  <!-- Background decorative sparkles & code brackets in Neon Red -->
+  <text x="45" y="110" fill="#ff385c" opacity="0.4" font-family="monospace" font-size="28" font-weight="bold">&lt;/&gt;</text>
+  <text x="320" y="140" fill="#ff4d6d" opacity="0.4" font-family="monospace" font-size="24">{ ; }</text>
+  <circle cx="75" cy="280" r="3.5" fill="#ff385c" opacity="0.7" />
+  <circle cx="330" cy="270" r="4" fill="#ff1744" opacity="0.6" />
+  <polygon points="310,75 315,85 325,87 317,94 319,104 310,98 301,104 303,94 295,87 305,85" fill="#ff4d6d" opacity="0.45" transform="scale(0.8) translate(80, 20)" />
+
+  <!-- Character Back Hair -->
+  <path d="M110 200 C110 110, 290 110, 290 200 C290 280, 260 320, 250 330 C240 270, 240 240, 230 220 C170 220, 160 270, 150 330 C140 320, 110 280, 110 200 Z" fill="url(#hairGrad)" />
+
+  <!-- Shoulders & Outfit (Cyber Dark Charcoal Hoodie with Crimson Neon Accents) -->
+  <path d="M85 400 C90 320, 135 285, 200 285 C265 285, 310 320, 315 400 Z" fill="url(#hoodieGrad)" />
+  <path d="M165 285 C175 325, 225 325, 235 285 Z" fill="#0d0d12" />
+  <!-- Neon Crimson Hoodie Trim and Drawstrings -->
+  <path d="M164 285 C174 326, 226 326, 236 285" fill="none" stroke="url(#hoodieTrim)" stroke-width="2.5" opacity="0.9" />
+  <path d="M197 292 L197 344 M203 292 L203 344" stroke="#ff4766" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+
+  <!-- Neck -->
+  <path d="M178 220 L222 220 L222 285 L178 285 Z" fill="url(#skinGrad)" />
+  <path d="M178 250 C190 265, 210 265, 222 250 Z" fill="#d49a74" opacity="0.3" />
+
+  <!-- Head / Face -->
+  <path d="M140 180 C140 245, 170 270, 200 270 C230 270, 260 245, 260 180 C260 120, 230 110, 200 110 C170 110, 140 120, 140 180 Z" fill="url(#skinGrad)" />
+
+  <!-- Front Hair & Bangs -->
+  <path d="M135 175 C135 115, 170 95, 200 95 C235 95, 265 115, 265 175 C265 185, 258 195, 252 175 C245 150, 235 135, 200 135 C165 135, 155 150, 148 175 C142 195, 135 185, 135 175 Z" fill="url(#hairGrad)" />
+  <path d="M140 160 C138 200, 145 230, 152 245 C150 220, 146 190, 148 165 Z" fill="#14070a" />
+  <path d="M260 160 C262 200, 255 230, 248 245 C250 220, 254 190, 252 165 Z" fill="#14070a" />
+
+  <!-- Eyes & Eyebrows -->
+  <path d="M165 165 C172 162, 182 162, 187 166" stroke="#260f15" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M213 166 C218 162, 228 162, 235 165" stroke="#260f15" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  
+  <ellipse cx="176" cy="180" rx="6" ry="7" fill="#1a0a0f" />
+  <ellipse cx="224" cy="180" rx="6" ry="7" fill="#1a0a0f" />
+  <circle cx="174" cy="178" r="2.2" fill="#ffffff" />
+  <circle cx="222" cy="178" r="2.2" fill="#ffffff" />
+
+  <!-- Soft Blush on Cheeks -->
+  <ellipse cx="162" cy="198" rx="8" ry="4" fill="#fb7185" opacity="0.35" />
+  <ellipse cx="238" cy="198" rx="8" ry="4" fill="#fb7185" opacity="0.35" />
+
+  <!-- Friendly Smile & Nose -->
+  <path d="M198 188 C199 194, 201 194, 202 188" stroke="#cf906c" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M188 215 C194 224, 206 224, 212 215" stroke="#be123c" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Modern Tech Glasses with Crimson Neon Glow -->
+  <rect x="156" y="166" width="38" height="28" rx="8" fill="none" stroke="#ff3355" stroke-width="2.8" opacity="0.95" />
+  <rect x="206" y="166" width="38" height="28" rx="8" fill="none" stroke="#ff3355" stroke-width="2.8" opacity="0.95" />
+  <path d="M194 178 L206 178" stroke="#ff3355" stroke-width="2.8" />
+  <path d="M156 175 L144 172" stroke="#ff3355" stroke-width="2.5" />
+  <path d="M244 175 L256 172" stroke="#ff3355" stroke-width="2.5" />
+  <!-- Glass lens reflection -->
+  <line x1="162" y1="170" x2="174" y2="182" stroke="#ffffff" stroke-width="1.8" opacity="0.5" stroke-linecap="round" />
+  <line x1="212" y1="170" x2="224" y2="182" stroke="#ffffff" stroke-width="1.8" opacity="0.5" stroke-linecap="round" />
+
+  <!-- Laptop Rim at Bottom Foreground -->
+  <path d="M140 370 L260 370 L275 400 L125 400 Z" fill="#181820" opacity="0.95" />
+  <rect x="145" y="373" width="110" height="4" rx="2" fill="#ff3355" opacity="0.75" />
+  <!-- Glowing Crimson Logo on Laptop Lid -->
+  <circle cx="200" cy="388" r="6" fill="#ff2a51" opacity="0.9" />
+</svg>
